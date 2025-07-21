@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "../components/Navbar";
 // import ContactHeroImg from "../assets/images/contact-hero.webp";
 // import LocationIcon from "../assets/icons/location.svg";

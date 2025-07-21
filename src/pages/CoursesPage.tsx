@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "../components/Navbar";
 // import CoursesHeroImg from "../assets/images/courses-hero.webp";
 // import CompetitiveIcon from "../assets/icons/competitive.svg";

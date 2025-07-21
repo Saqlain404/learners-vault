@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "../components/Navbar";
 import HeaderImg from "../assets/images/3D-email.webp";
 import AboutImg from "../assets/images/about.png";
