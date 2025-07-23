@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import HeaderImg from "../assets/images/3D-email.webp";
 import CardImg1 from "../assets/images/card1.png";
+import About from "../assets/images/about.png" 
 import Footer from "../components/Footer";
 import { FaArrowRight, FaChalkboardTeacher } from "react-icons/fa";
 import { AiOutlineDashboard } from "react-icons/ai";
@@ -111,7 +112,7 @@ const HomePage = () => {
             
             <div className="w-full lg:w-1/2 order-1 lg:order-2">
               <Image3DCard
-                imageUrl="src/assets/images/about.png"
+                imageUrl={About}
                 title=""
                 description="" bgColor={""} shadow={""} width={""} height={""}              />
             </div>
