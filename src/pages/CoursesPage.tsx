@@ -1,6 +1,6 @@
 
 import Navbar from "../components/Navbar";
-// import CoursesHeroImg from "../assets/images/courses-hero.webp";
+import CoursesHeroImg from "../assets/images/courses-hero.jpeg";
 // import CompetitiveIcon from "../assets/icons/competitive.svg";
 // import SkillDevIcon from "../assets/icons/skill-dev.svg";
 // import CareerIcon from "../assets/icons/career.svg";
@@ -8,6 +8,11 @@ import Navbar from "../components/Navbar";
 // import TestSeriesIcon from "../assets/icons/test-series.svg";
 // import CrashCourseIcon from "../assets/icons/crash-course.svg";
 import Footer from "../components/Footer";
+import { FaComputer } from "react-icons/fa6";
+import { GiGrowth, GiSkills } from "react-icons/gi";
+import { MdClass } from "react-icons/md";
+import { FcDocument } from "react-icons/fc";
+import { SiCoursera } from "react-icons/si";
 
 const CoursesPage = () => {
   const courses = [
@@ -18,7 +23,7 @@ const CoursesPage = () => {
       description: "Comprehensive preparation for engineering entrance exams with IIT alumni faculty.",
       duration: "12 Months",
       batches: "Weekday & Weekend",
-      icon: '',
+      icon: <FaComputer className="h-6 w-6 text-white" />,
       color: "bg-cyan-500",
       features: [
         "1000+ hours of intensive training",
@@ -34,7 +39,7 @@ const CoursesPage = () => {
       description: "Complete medical entrance preparation with experienced faculty and proven results.",
       duration: "12 Months",
       batches: "Weekday & Weekend",
-      icon: '',
+      icon: <FaComputer className="h-6 w-6 text-white" />,
       color: "bg-blue-500",
       features: [
         "Biology, Physics, Chemistry coverage",
@@ -50,7 +55,7 @@ const CoursesPage = () => {
       description: "Holistic preparation for UPSC with current affairs focus and answer writing practice.",
       duration: "18 Months",
       batches: "Weekday & Weekend",
-      icon: '',
+      icon: <FaComputer className="h-6 w-6 text-white" />,
       color: "bg-purple-500",
       features: [
         "GS, CSAT, Optional subjects",
@@ -66,7 +71,7 @@ const CoursesPage = () => {
       description: "Master front-end and back-end technologies to become job-ready developer.",
       duration: "6 Months",
       batches: "Weekday & Weekend",
-      icon: '',
+      icon: <GiSkills className="h-6 w-6 text-white" />,
       color: "bg-amber-500",
       features: [
         "HTML, CSS, JavaScript, React",
@@ -82,7 +87,7 @@ const CoursesPage = () => {
       description: "Learn Python, ML algorithms and data analysis tools from industry experts.",
       duration: "8 Months",
       batches: "Weekday & Weekend",
-      icon: '',
+      icon: <GiSkills className="h-6 w-6 text-white" />,
       color: "bg-green-500",
       features: [
         "Python programming",
@@ -98,7 +103,7 @@ const CoursesPage = () => {
       description: "Craft winning resumes and master interview techniques for your dream job.",
       duration: "1 Month",
       batches: "Weekend",
-      icon: '',
+      icon: <GiGrowth className="h-6 w-6 text-white" />,
       color: "bg-red-500",
       features: [
         "Resume building workshops",
@@ -114,36 +119,36 @@ const CoursesPage = () => {
       id: 1,
       title: "Online Live Classes",
       description: "Attend classes from anywhere with interactive live sessions.",
-      icon: '',
+      icon: <MdClass className="h-6 w-6 text-white" />,
       color: "bg-cyan-500"
     },
     {
       id: 2,
       title: "Test Series",
       description: "Comprehensive test series with detailed performance analysis.",
-      icon: '',
+      icon: <FcDocument className="h-6 w-6 text-white" />,
       color: "bg-purple-500"
     },
     {
       id: 3,
       title: "Crash Courses",
       description: "Last-minute revision programs before major exams.",
-      icon: '',
+      icon: <SiCoursera className="h-6 w-6 text-white" />,
       color: "bg-amber-500"
     }
   ];
 
   return (
-    <div className="bg-slate-900 min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-blue-900 text-white ">
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900 to-slate-700/50 "></div>
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 md:-inset-6 bg-gradient-to-r from-slate-900 to-slate-700/50 "></div>
         <img 
-          src=''
+          src={CoursesHeroImg}
           alt="Students learning" 
-          className="w-full h-96 object-cover"
+          className="w-full h-96 object-cover object-center md:object-right"
         />
         <div className="container mx-auto px-4 relative  -mt-52 ">
           <div className="max-w-2xl flex flex-col mx-auto text-center  bg-opacity-90 p-8 rounded-lg">
@@ -167,7 +172,7 @@ const CoursesPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-slate-800 p-8 rounded-lg text-center hover:shadow-lg hover:shadow-cyan-500/20 transition-shadow hover:-translate-y-2">
               <div className="bg-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <img src={''} alt="Competitive Exams" className="h-8 w-8" />
+                <FaComputer className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Competitive Exams</h3>
               <p className="text-gray-300 mb-6">
@@ -180,7 +185,7 @@ const CoursesPage = () => {
             
             <div className="bg-slate-800 p-8 rounded-lg text-center hover:shadow-lg hover:shadow-purple-500/20 transition-shadow hover:-translate-y-2">
               <div className="bg-purple-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <img src={''} alt="Skill Development" className="h-8 w-8" />
+                <GiSkills className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Skill Development</h3>
               <p className="text-gray-300 mb-6">
@@ -193,7 +198,7 @@ const CoursesPage = () => {
             
             <div className="bg-slate-800 p-8 rounded-lg text-center hover:shadow-lg hover:shadow-amber-500/20 transition-shadow hover:-translate-y-2">
               <div className="bg-amber-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <img src={''} alt="Career Growth" className="h-8 w-8" />
+                <GiGrowth className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Career Growth</h3>
               <p className="text-gray-300 mb-6">
@@ -219,7 +224,7 @@ const CoursesPage = () => {
                 <div className="p-6">
                   <div className="flex items-center mb-4">
                     <div className={`${course.color} p-2 rounded-lg mr-4`}>
-                      <img src={course.icon} alt={course.category} className="h-6 w-6" />
+                      {course.icon} 
                     </div>
                     <span className="text-sm font-medium text-gray-300">{course.category}</span>
                   </div>
@@ -283,7 +288,7 @@ const CoursesPage = () => {
             {specialPrograms.map((program) => (
               <div key={program.id} className="bg-slate-800 rounded-lg p-6 flex items-start hover:shadow-lg hover:shadow-cyan-500/10 transition-shadow">
                 <div className={`${program.color} p-3 rounded-lg mr-4 flex-shrink-0`}>
-                  <img src={program.icon} alt={program.title} className="h-6 w-6" />
+                  {program.icon}
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">{program.title}</h3>
@@ -352,7 +357,7 @@ const CoursesPage = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-cyan-500 rounded-lg p-8 text-center">
+        <div className="bg-gradient-to-r from-blue-900 to-purple-900 rounded-3xl p-8 md:p-12 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Still Confused About Which Course to Choose?
           </h2>

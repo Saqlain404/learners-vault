@@ -8,11 +8,11 @@ import Footer from "../components/Footer";
 
 const AboutPage = () => {
   return (
-    <div className="bg-slate-900 min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-blue-900 text-white">
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <div className="absolute -inset-6 bg-gradient-to-r from-slate-900 to-slate-700/50 "></div>
         <img 
           src={AboutHeroImg} 
@@ -61,9 +61,9 @@ const AboutPage = () => {
 
         {/* Mission & Vision Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
-          <div className="bg-slate-800 p-8 rounded-lg">
-            <div className="flex items-center mb-6">
-              <div className="bg-cyan-500 p-3 rounded-full mr-4">
+          <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-cyan-400 transition-all hover:scale-[1.02]">
+            <div className="flex items-center  mb-6">
+              <div className="bg-cyan-500 p-3 rounded-full  mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -74,7 +74,7 @@ const AboutPage = () => {
               To democratize quality education by making expert guidance accessible to all students, regardless of their background. We aim to nurture not just academic excellence but also critical thinking, problem-solving skills, and lifelong learning habits.
             </p>
           </div>
-          <div className="bg-slate-800 p-8 rounded-lg">
+          <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-cyan-400 transition-all hover:scale-[1.02]">
             <div className="flex items-center mb-6">
               <div className="bg-blue-500 p-3 rounded-full mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -96,7 +96,7 @@ const AboutPage = () => {
             Our Core <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Values</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-slate-800 p-6 rounded-lg hover:translate-y-2 transition-transform">
+            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-amber-400  hover:scale-[1.02] hover:translate-y-2 transition-transform">
               <div className="bg-amber-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
@@ -107,7 +107,7 @@ const AboutPage = () => {
                 We strive for the highest standards in teaching, curriculum, and student outcomes, continuously improving our methods.
               </p>
             </div>
-            <div className="bg-slate-800 p-6 rounded-lg hover:translate-y-2 transition-transform">
+            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-400  hover:scale-[1.02] hover:translate-y-2 transition-transform">
               <div className="bg-purple-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -118,7 +118,7 @@ const AboutPage = () => {
                 We maintain honesty, transparency, and ethical practices in all our interactions with students, parents, and staff.
               </p>
             </div>
-            <div className="bg-slate-800 p-6 rounded-lg hover:translate-y-2 transition-transform">
+            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-green-400  hover:scale-[1.02] hover:translate-y-2 transition-transform">
               <div className="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -149,7 +149,7 @@ const AboutPage = () => {
               "Education is not just about passing exams; it's about empowering young minds to think critically, solve problems creatively, and contribute meaningfully to society."
             </p>
             <p className="text-gray-300 mb-4">
-              Dr. Amit Sharma, an IIT Delhi alumnus and former professor with 15+ years of teaching experience, founded Learner's Vault with a simple belief: every student deserves access to quality education tailored to their unique learning needs.
+              Er. Moaz Siddiqui, an IIT Delhi alumnus and former professor with 15+ years of teaching experience, founded Learner's Vault with a simple belief: every student deserves access to quality education tailored to their unique learning needs.
             </p>
             <p className="text-gray-300">
               Under his leadership, our institute has pioneered several innovative teaching methodologies that have helped thousands of students achieve academic success beyond their expectations.
@@ -175,7 +175,7 @@ const AboutPage = () => {
         <div className="absolute -left-8 md:hidden w-4 h-4 rounded-full bg-cyan-500 z-10 border-2 border-slate-900 top-4"></div>
         
         <div className="flex-1 md:text-right md:pr-8  order-1 md:order-1">
-          <h3 className="text-xl md:text-2xl font-bold text-white">2010</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-white">2020</h3>
           <p className="text-gray-300 text-sm md:text-base">Founded with 1 center and 12 students</p>
         </div>
         
@@ -191,7 +191,7 @@ const AboutPage = () => {
         <div className="absolute -left-8 md:hidden w-4 h-4 rounded-full bg-blue-500 z-10 border-2 border-slate-900 top-4"></div>
         
         <div className="flex-1 md:pl-8  order-1 md:order-3">
-          <h3 className="text-xl md:text-2xl font-bold text-white">2014</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-white">2022</h3>
           <p className="text-gray-300 text-sm md:text-base">Expanded to 5 centers across Delhi NCR</p>
         </div>
         
@@ -207,7 +207,7 @@ const AboutPage = () => {
         <div className="absolute -left-8 md:hidden w-4 h-4 rounded-full bg-purple-500 z-10 border-2 border-slate-900 top-4"></div>
         
         <div className="flex-1 md:text-right md:pr-8  order-1 md:order-1">
-          <h3 className="text-xl md:text-2xl font-bold text-white">2017</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-white">2023</h3>
           <p className="text-gray-300 text-sm md:text-base">Launched online learning platform</p>
         </div>
         
@@ -223,7 +223,7 @@ const AboutPage = () => {
         <div className="absolute -left-8 md:hidden w-4 h-4 rounded-full bg-amber-500 z-10 border-2 border-slate-900 top-4"></div>
         
         <div className="flex-1 md:pl-8  order-1 md:order-3">
-          <h3 className="text-xl md:text-2xl font-bold text-white">2020</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-white">2024</h3>
           <p className="text-gray-300 text-sm md:text-base">10,000+ students trained milestone</p>
         </div>
         
@@ -239,7 +239,7 @@ const AboutPage = () => {
         <div className="absolute -left-8 md:hidden w-4 h-4 rounded-full bg-green-500 z-10 border-2 border-slate-900 top-4"></div>
         
         <div className="flex-1 md:text-right md:pr-8  order-1 md:order-1">
-          <h3 className="text-xl md:text-2xl font-bold text-white">2023</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-white">2025</h3>
           <p className="text-gray-300 text-sm md:text-base">National recognition with 15+ centers across India</p>
         </div>
         

@@ -1,22 +1,20 @@
 
 import Navbar from "../components/Navbar";
-// import ContactHeroImg from "../assets/images/contact-hero.webp";
-// import LocationIcon from "../assets/icons/location.svg";
-// import PhoneIcon from "../assets/icons/phone.svg";
-// import EmailIcon from "../assets/icons/email.svg";
-// import ClockIcon from "../assets/icons/clock.svg";
+import ContactHeroImg from "../assets/images/about-hero.jpg";
 import Footer from "../components/Footer";
+import { FaLocationPin } from "react-icons/fa6";
+import { FaClock, FaMailBulk, FaPhone } from "react-icons/fa";
 
 const ContactPage = () => {
   return (
-    <div className="bg-slate-900 min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-blue-900 text-white">
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <div className="absolute -inset-6 bg-gradient-to-r from-slate-900 to-slate-700/50 "></div>
         <img 
-          src='' 
+          src={ContactHeroImg} 
           alt="Students learning" 
           className="w-full h-96 object-cover"
         />
@@ -46,7 +44,7 @@ const ContactPage = () => {
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="bg-cyan-500 p-3 rounded-full mr-4 flex-shrink-0">
-                  <img src="" alt="Location" className="h-6 w-6" />
+                    <FaLocationPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-1">
@@ -62,7 +60,7 @@ const ContactPage = () => {
 
               <div className="flex items-start">
                 <div className="bg-blue-500 p-3 rounded-full mr-4 flex-shrink-0">
-                  <img src="" alt="Phone" className="h-6 w-6" />
+                    <FaPhone className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-1">
@@ -80,7 +78,7 @@ const ContactPage = () => {
 
               <div className="flex items-start">
                 <div className="bg-purple-500 p-3 rounded-full mr-4 flex-shrink-0">
-                  <img src="" alt="Email" className="h-6 w-6" />
+                  <FaMailBulk className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-1">
@@ -98,7 +96,7 @@ const ContactPage = () => {
 
               <div className="flex items-start">
                 <div className="bg-amber-500 p-3 rounded-full mr-4 flex-shrink-0">
-                  <img src="" alt="Hours" className="h-6 w-6" />
+                  <FaClock className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-1">
@@ -117,7 +115,7 @@ const ContactPage = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-slate-800 p-8 rounded-lg shadow-xl">
+          <div className="bg-slate-800/20 hover:bg-slate-800/50  p-8 rounded-2xl shadow-xl">
             <h3 className="text-2xl font-bold text-white mb-6">
               Send Us a Message
             </h3>
@@ -363,7 +361,7 @@ const ContactPage = () => {
 
         {/* Map Section */}
         <div className="mb-16 bg-slate-800 rounded-lg overflow-hidden">
-          <h2 className="text-4xl font-bold text-white mb-8 p-8 pb-0">
+          <h2 className="text-2xl font-bold text-white mb-8 p-8 pb-0">
             Find Us on{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">
               Map
